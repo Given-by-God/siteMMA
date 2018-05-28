@@ -37,6 +37,9 @@
                         <div class="dataOfBirth">Дата рождения : <span>19-123-123</span></div>
                         <div class="dataOfBirth">Возраст : <span>19</span></div>
 
+                        <div class="dataOfBirth">рекорлд : <span>19</span></div>
+
+
                         <div class="flexDetailInfo">
                             <div>
                                 <div>вес</div>
@@ -57,33 +60,35 @@
                                 <div>135lbs</div>
                             </div>
                         </div>
+
+
                     </div>
 
-                    <canvas id="pie-chart" width="800" height="450"></canvas>
-                    <script>
 
-                        new Chart(document.getElementById("pie-chart"), {
-                            type: 'pie',
-                            data: {
-                                labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
-                                datasets: [{
-                                    label: "Population (millions)",
-                                    backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-                                    data: [2478,5267,734,784,433]
-                                }]
-                            },
-                            options: {
-                                title: {
-                                    display: true,
-                                    text: 'Predicted world population (millions) in 2050'
-                                }
-                            }
-                        });
-                    </script>
 
                 </div>
 
+                <canvas id="pie-chart" width="800" height="450"></canvas>
+                <script>
 
+                    new Chart(document.getElementById("pie-chart"), {
+                        type: 'pie',
+                        data: {
+                            labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+                            datasets: [{
+                                label: "Population (millions)",
+                                backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+                                data: [2478,5267,734,784,433]
+                            }]
+                        },
+                        options: {
+                            title: {
+                                display: true,
+                                text: 'Predicted world population (millions) in 2050'
+                            }
+                        }
+                    });
+                </script>
 
 
                 <div class="prelims">
@@ -92,7 +97,7 @@
 
 
                 <div class="nextFight">
-                    <div class="col-md-12 gridMainFightBlock">
+                    <div class=" gridMainFightBlock">
 
 
 
@@ -125,9 +130,12 @@
                     Статистика
                 </div>
 
+
+
+
                 <div class="detailStaticTable">
                     <table class="statiscticsTable">
-
+                    <thead>
                         <tr>
                             <th>Результат</th>
                             <th>Соперник</th>
@@ -136,14 +144,18 @@
                             <th>Время</th>
                             <th>Видео</th>
                         </tr>
+                    </thead>
+
+                        <tbody>
 
                         <tr>
-                            <th><div class="winFight">проиграл</div></th>
+                            <th><div class="btn-success">победа</div></th>
                             <th><a href="#">Событие <br> (соперник)</a></th>
                             <th><a href="#">Событие,Судья</a></th>
                             <th>P</th>
                             <th>Время</th>
-                            <th>Смотреть</th>
+                            <th class="">
+                                <button class="btn btn-primary glyphicon glyphicon-play-circle">Смотреть</button></th>
                         </tr>
 
                         <tr class="bottomBorder">
@@ -152,10 +164,73 @@
                             <th></th>
                             <th></th>
                             <th></th>
-                        </tr >
+                        </tr>
+
+                        <tr class="bottomBorder">
+                        </tr>
 
 
+                        <tr>
+                            <th><div class="btn-danger">проиграл</div></th>
+                            <th><a href="#">Событие <br> (соперник)</a></th>
+                            <th><a href="#">Событие,Судья</a></th>
+                            <th>P</th>
+                            <th>Время</th>
+                            <th>-</th>
+                        </tr>
 
+                        <tr class="bottomBorder">
+                            <th colspan="2">Решение (единогласным)</th>
+                            <th > 26 Апр 2018 / Незвестен </th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+
+                        <tr class="bottomBorder">
+                        </tr>
+
+                        <tr>
+                            <th><div class="winFight">проиграл</div></th>
+                            <th><a href="#">Событие <br> (соперник)</a></th>
+                            <th><a href="#">Событие,Судья</a></th>
+                            <th>P</th>
+                            <th>Время</th>
+                            <th>-</th>
+                        </tr>
+
+                        <tr class="bottomBorder">
+                            <th colspan="2">Решение (единогласным)</th>
+                            <th > 26 Апр 2018 / Незвестен </th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+
+                        <tr class="bottomBorder">
+                        </tr>
+
+                        <tr>
+                            <th><div class="winFight">проиграл</div></th>
+                            <th><a href="#">Событие <br> (соперник)</a></th>
+                            <th><a href="#">Событие,Судья</a></th>
+                            <th>P</th>
+                            <th>Время</th>
+                            <th>-</th>
+                        </tr>
+
+                        <tr class="bottomBorder">
+                            <th colspan="2">Решение (единогласным)</th>
+                            <th > 26 Апр 2018 / Незвестен </th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+
+                        <tr class="bottomBorder">
+                        </tr>
+
+                        </tbody>
 
                     </table>
                 </div>
