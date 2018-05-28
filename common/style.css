@@ -5,6 +5,32 @@
     margin: 0;
 }
 
+.blockItemPrelims .blockItemTable img{
+    width:100%;
+    right:  unset;
+}
+
+.infoAboutEvent{
+    /* display:  flex; */
+    background: #d0d0d0;
+    margin:  1% 0;
+    color: #232c4a;
+    font-size:  23px;
+    font-weight:  600;
+}
+.nameFighterOne,.nameFighterTwo{
+    background:black;
+    color:white;
+}
+
+
+.blockItemTable tr th {
+    /* overflow:hidden; */
+}
+
+html{
+    height: 100%;
+}
 
 .detailImg{
 
@@ -36,13 +62,15 @@
 
 .blockItemTable{
     /* border-right: 1px solid red; */
-    /* overflow:  hidden; */
-    padding: 1px;
+    overflow:  hidden;
+    /* padding: 8px; */
+    margin: 5px 0;
     /* flex: 0 1 31%; */
-    width: 32%;
+    width: 33%;
     /* height:  100%; */
     /* flex-flow: wrap row; */
     min-width: 200px;
+    position:  relative;
 }
 .prelims{
     background:#f0b420;
@@ -52,11 +80,21 @@
     text-transform:uppercase;
     margin: 1% 0;
     clear:  both;
+    /* width:  100%; */
 }
 
-.nameFighterTwo,.nameFighterOne{
+.nameFighterOne,.nameFighterTwo{
     width:100%;
     text-align:center;
+    position:  absolute;
+    top: 0;
+    height: 15px;
+    font-size: 11px;
+    z-index:  1;
+}
+.nameFighterTwo{
+    bottom:  0;
+    top:  unset;
 }
 
 .blockItem{display:flex;justify-content:  space-evenly;flex-flow: wrap row;}
@@ -87,11 +125,14 @@ a:hover{text-decoration:none;color:#732335;}
 .mainTable tr th:nth-child(even){
     background:#232c4a;
     color:white;
+    width:  30%;
 }
 
 .blockItemTable img{
-    width: 100%;
-    height: auto;
+    width: 122px;
+    height: 100px;
+    position:  relative;
+    right: 18px;
 }
 
 
@@ -147,6 +188,9 @@ body {
     /* position:  relative; */
     flex-flow:  column;
     align-items: center;
+    min-height: 100%;
+    position: relative;
+    /* height: 100%; */
 }
 .wrapAllHeader{display:flex;margin: 0 15% 0 15%;align-items:  center;}
 
@@ -224,13 +268,15 @@ main.sheduleShecial{
 }
 
 main{
-    margin: 5% auto;
+    margin: 3% auto;
     max-width: 1080px;
     /* justify-content:  center; */
     order: 1;
     width:  100%;
+    height: 100%;
     /* align-items:  center; */
     /* align-content:  center; */
+    position:  relative;
 }
 
 .itemMainNews{
@@ -426,8 +472,8 @@ main{
     margin-top:  5%;
 }
 .detailNews>p{order: 1;}
-.detailNews>div{order: 0;}
-.detailNews>div img{width: auto;height:auto;}
+.detailNews>div{/* width:  100%; */order: 0;}
+.detailNews>div img{max-width: 100%;}
 .calendarAndFighters,.imgOfSideBarFighters,.dataOfEvent,.listOfFighters{
     display: flex;
     width: 100%;
@@ -541,8 +587,8 @@ footer{
     /* margin:  0; */
     /* padding:  0; */
     /* width:  100%; */
-    /* position:  absolute; */
-    /* bottom:  0; */
+    position:  absolute;
+    bottom:  0;
     width: 100%;
 }
 footer nav{
@@ -563,8 +609,8 @@ footer nav{
 }
 
 .data{
-    background:#732335;
-    color:white;
+    /* background:#732335; */
+    color: #7b7b7b;
 }
 
 .tag{
@@ -620,20 +666,25 @@ footer nav{
     width:  100%;
 }
 
-.firstFightMainBlock img{width: 100%;}
+.firstFightMainBlock img{max-width: 150px;/* height:  100px; */}
 
-.secondFightMainBlock img{width: 100%;}
+.secondFightMainBlock img{max-width: 150px;/* height: 100px; */}
 
 .gridMainFightBlock{
     display:grid;
-    grid-template-columns: 25% 14% 25%;
+    grid-template-columns: 35% 30% 35%;
     align-items: center;
     justify-content:  center;
     /* grid-template-rows: 162px auto; */
     /* margin-top:  1%; */
-    /* border: 1px solid #253049; */
-    margin: 1% auto;
-    width: 70%;
+    border: 4px solid #253049;
+    /* margin: 1% auto; */
+    /* width: 70%; */
+    /* padding: 0; */
+    /* position:  relative; */
+    left:  15px;
+    /* top: 6px; */
+    /* background:  mediumvioletred; */
 }
 .mainTable a{
     text-decoration: underline;
@@ -708,9 +759,23 @@ footer nav{
     justify-content:  space-around;
 }
 
+.blockItemTable .photoOne img{
+    right:  unset;
+}
+.blockItemPrelims{
+    display: flex;
+    justify-content:  space-around;
+    flex-flow: row wrap;
+    width:  100%;
+}
 .statiscticsTable a{
     text-decoration: underline;
     color: #24304a;
+}
+
+.fightersSearching{
+    display: flex;
+    justify-content: space-between;
 }
 
 .detailImg img{
@@ -722,6 +787,12 @@ footer nav{
 .bottomBorder{
     border-bottom: 1px solid #aaa5a6;
     color: #656565;
+}
+
+
+.blockItemPrelims .blockItemTable{
+    width: 24%;
+    overflow:  hidden;
 }
 
 .statiscticsTable tbody tr:nth-child(6n-3),.statiscticsTable tbody tr:nth-child(6n-4),.statiscticsTable tbody tr:nth-child(6n-5){
