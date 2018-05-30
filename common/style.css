@@ -271,7 +271,7 @@ body {
     position: relative;
     /* height: 100%; */
 }
-.wrapAllHeader{display:flex;margin: 0 15% 0 15%;align-items:  center;}
+.wrapAllHeader{display:flex;/* margin: 0 15% 0 15%; */align-items:  center;justify-content:  center;}
 
 header {
     order: 0;
@@ -289,7 +289,7 @@ header {
 .wrapHeader {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .wrapHeader a{
     color: #ffffff;
@@ -450,6 +450,22 @@ main{
 }
 .textGridNews{
     padding:1% 4%;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .wrapAllHeader{
+        justify-content:unset;
+    }
+}
+@media only screen and (max-width: 935px)
+{
+    .forumItem{
+        display:none !important;
+    }
+    .moreItem{
+        display:unset;
+    }
 }
 
 @media only screen and (max-width: 950px)
@@ -855,6 +871,9 @@ footer nav{
     color: #24304a;
 }
 
+.searchItem .glyphicon{
+    color:white;
+}
 .fightersSearching{
     display: flex;
     justify-content: space-between;
