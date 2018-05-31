@@ -11,6 +11,13 @@
     /* padding: 8px; */
 }
 
+.listOfEvents{
+    /* display:flex; */
+    flex-flow:row nowrap;
+    /* height: 17%; */
+    /* border-right:  1px solid red; */
+}
+
 .blogItem1 > .blogimg > a::before{
 
     content: '';
@@ -578,6 +585,7 @@ main{
     align-items:  center;
     /* padding: 0 1%; */
     margin-top: 1%;
+    flex-flow:  wrap;
 }
 
 .fightersMenu,.calendarMenu{
@@ -640,19 +648,65 @@ main{
 .listOfFighters,.dataOfEvent{
     border-bottom:1px solid #d9d9d9;
     padding:1% 0;
+    /* flex-flow:  column; */
 }
 @media only screen and (max-width: 991px)
 {
+
+    .listOfEvents {
+        display: flex;
+        flex-flow: row wrap;
+        /*justify-content: s;*/
+        /* align-items:  start; */
+    }
+
+    .dataOfEvent:nth-child(odd){
+        border-right:1px solid #d9d9d9;
+        /*align-items: flex;*/
+        /* align-content: flex-start; */
+    }
+
+    .dataOfEvent{
+
+        margin:1%;
+        border-bottom:  unset;
+        flex: 1 1 48%;
+    }
+    .wrapSideCalendarAndFighter{
+        padding:0 !important;
+    }
     .sideBar{
-        display: none;
+        /*         display: none; */
+
+
     }
     main{
         margin:unset;
     }
+    .popularNews{
+        flex-flow:row nowrap !important;
+        align-items:center;
+
+    }
+    .popularNews .textOfPopularNews{
+        padding:1% !important;
+        flex:1 1 60%
+    }
+    .imgOfPopularNews{
+        flex:1 1 40%;
+    }
+    .imgOfSideBarFighters{
+        flex: 1 1 20% !important;
+    }
+    .nameOfSideBarFighters{
+        flex: 1 1 75% !important;
+    }
+
 }
 .popularNews{
     display: flex;
     flex-flow: column nowrap;
+    /* align-items: center; */
 }
 
 .imgOfPopularNews img{width: 100%;}
@@ -877,6 +931,7 @@ footer nav{
 .fightersSearching{
     display: flex;
     justify-content: space-between;
+    /* width: 100%; */
 }
 
 .detailImg img{
@@ -890,7 +945,18 @@ footer nav{
     color: #656565;
 }
 
+.memesFlex{
+    background: #f3f3f3;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* margin:  3% 0; */
+    padding:  2%;
+}
 
+.memesImg img{
+}
 .btnWatch{
     padding: 3%;
 }
@@ -902,4 +968,17 @@ footer nav{
 
 .statiscticsTable tbody tr:nth-child(6n-3),.statiscticsTable tbody tr:nth-child(6n-4),.statiscticsTable tbody tr:nth-child(6n-5){
     background: #e0e0e0;
+}
+
+.wrapSideCalendarAndFighter{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 2%;
+    width:  100%;
+}
+
+.calendarSideBar{
+    /* display:flex; */
+    flex-flow:row wrap;
 }
